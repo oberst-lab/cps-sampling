@@ -1,0 +1,23 @@
+[project]
+name = "cps-sampling"
+version = "0.1.0"
+description = "Conditional Poisson sampling: fixed-size samples with given inclusion probabilities"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Erik Skalnes", email = "eskalne1@jhu.edu" },
+    { name = "Michael Oberst", email = "moberst@jhu.edu" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numba",
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
