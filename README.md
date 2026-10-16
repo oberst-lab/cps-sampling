@@ -1,8 +1,8 @@
 # cps-sampling
 
-Conditional Poisson sampling (CPS) in Python. You give it inclusion probabilities π, and it gives you samples of exactly n = Σπ units in which unit i appears with probability π_i.
-
-CPS is the maximum-entropy design with fixed sample size: Poisson sampling conditioned on the sample size. Its fixed size makes estimates less variable than Poisson sampling with the same π, which is why we use it for active statistical inference (Skalnes and Oberst, 2026).
+Conditional Poisson Sampling (CPS) in Python. 
+You input inclusion probabilities π, where π_i = P(s_i=1) i.e. the probability of including unit i in the sample, and it gives you a sample of exactly n = Σπ units in which unit i appears with probability π_i.
+This is the package released with the paper Fixed Size Statistical Inference (Skalnes and Oberst, 2026)
 
 ## Install
 
